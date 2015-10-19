@@ -5,3 +5,4 @@ Vika:
 3. Koma Webcam inná síðuna.
 4. bootstrap í drasl.
 5 - 6. bug fixes og publish. 
+Test
