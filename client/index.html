@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html>
 <head>
     <meta charset="UTF-8">
-    <title>Tjatt</title>
-    <link href="bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
-    <link href="bootstrap/css/sticky-footer.css" rel="stylesheet">
+    <title>TjattX!</title>
 </head>
 <body>
     <div class="h1 text-center">
-        Tjatt
+        TjattX
     </div>
     <div class="row" style="margin-top:50px;">
 	    <div style="margin-left:10px;" class="col-md-3">
@@ -79,10 +75,10 @@
 	                    <tr>
 	                        <td><b>Me:</b> Porta ac consectetur ac</td>
 	                    </tr>
-	                    
+
 	                </tbody>
 	                <tr>
-	                    	<td><input type="text" class="form-control" placeholder="Write something here"></td>
+	                    	<td>{{> input}}</td>
 	                    </tr>
 	            </table>
         	</div>
@@ -95,8 +91,9 @@
     </div>
     <footer class="footer">
       <div class="container">
-        <p class="text-center text-muted">Copyright © 2015 Tjatt.is. All Rights Reserved.</p>
+        <p class="text-center text-muted">Copyright © 2015 TjattX.is. All Rights Reserved.</p>
       </div>
     </footer>
+
+    {{> messages}}
 </body>
-</html>
