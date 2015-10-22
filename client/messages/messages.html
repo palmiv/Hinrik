@@ -1,7 +1,7 @@
 <template name="messages">
-  <div id="chats" class="chat">
     {{#each messages}}
-      <span class="username">{{name}}: </span> {{message}} <br>
+      <tr>
+          <td><b>{{name}}: </b> {{message}}</td>
+      </tr>
     {{/each}}
-  </div>
 </template>
