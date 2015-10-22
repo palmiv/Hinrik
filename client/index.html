@@ -1,6 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <title>TjattX!</title>
+    <link href="bootstrap/css/sticky-footer.css" rel="stylesheet">
 </head>
 <body>
     <div class="h1 text-center">
@@ -20,66 +21,14 @@
 	                        </th>
 	                    </tr>
 	                </thead>
-	                <tbody>
-	                    <tr>
-	                        <td><b>Anonymous:</b> Cras justo odio</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Me:</b> Dapibus ac facilisis in</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Anonymous:</b> Morbi leo risus</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Me:</b> Porta ac consectetur ac</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Anonymous:</b> Vestibulum at eros</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Me:</b> Porta ac consectetur ac</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Anonymous:</b> Cras justo odio</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Me:</b> Dapibus ac facilisis in</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Anonymous:</b> Morbi leo risus</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Me:</b> Porta ac consectetur ac</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Anonymous:</b> Vestibulum at eros</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Me:</b> Porta ac consectetur ac</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Anonymous:</b> Cras justo odio</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Me:</b> Dapibus ac facilisis in</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Anonymous:</b> Morbi leo risus</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Me:</b> Porta ac consectetur ac</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Anonymous:</b> Vestibulum at eros</td>
-	                    </tr>
-	                    <tr>
-	                        <td><b>Me:</b> Porta ac consectetur ac</td>
-	                    </tr>
-
+	                <tbody style="text-align:left;">
+	                    {{> messages}}
 	                </tbody>
+                  <tbody>
 	                <tr>
-	                    	<td>{{> input}}</td>
-	                    </tr>
+	                    <td>{{> input}}</td>
+	                </tr>
+                </tbody>
 	            </table>
         	</div>
         </div>
@@ -95,5 +44,5 @@
       </div>
     </footer>
 
-    {{> messages}}
+
 </body>
