@@ -19,6 +19,7 @@ Template.input.events = {
 
       document.getElementById('message').value = '';
       message.value = '';
+      $('#chatWindow').scrollTop($('#chatWindow')[0].scrollHeight);
     };
   }
 }
