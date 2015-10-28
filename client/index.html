@@ -3,25 +3,25 @@
     <title>TjattX!</title>
     <link href="bootstrap/css/sticky-footer.css" rel="stylesheet">
 </head>
-<body>
+<body style="overflow-x: hidden;">
     <div class="h1 text-center">
         TjattX
     </div>
     <div class="row" style="margin-top:50px;">
 	    <div style="margin-left:10px;" class="col-md-3">
-	        <div class="well" id="Camera1"><img class="img-responsive" style="width: 100%; height: 100%" src="http://media.giphy.com/media/XreQmk7ETCak0/giphy.gif"></div>
+	        {{> localwebcam}}
 	    </div>
-    	<div style="overflow: auto; height: 600px !important; margin-left:-10px;" class="col-md-6" id="chat">
-        	<div class="">
+    	<div style="overflow: auto; height: 600px !important; margin-left:-10px;" class="col-md-6" id="chatWindow">
+        	<div>
 	            <table class="table table-bordered table-striped">
-	                <thead>
+	                <thead style="position:sticky">
 	                    <tr>
 	                        <th>
 	                            <p class="text-center"><i>Say Something!</i></p>
 	                        </th>
 	                    </tr>
 	                </thead>
-	                <tbody style="text-align:left;">
+	                <tbody id="chatmessages" style="text-align:left;">
 	                    {{> messages}}
 	                </tbody>
                   <tbody>
@@ -34,7 +34,7 @@
         </div>
 		<div style="margin-left:-10px;" class="col-md-3">
 			<div class="well" id="Camera2">
-				<img class="img-responsive" style="width: 100%; height: 100%" src="http://rhrealitycheck.org/wp-content/uploads/2014/10/Fresh-Prince.gif">
+				{{> remotewebcam}}
 			</div>
 		</div>
     </div>
@@ -43,6 +43,4 @@
         <p class="text-center text-muted">Copyright © 2015 TjattX.is. All Rights Reserved.</p>
       </div>
     </footer>
-
-
 </body>
