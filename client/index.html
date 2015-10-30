@@ -2,45 +2,34 @@
     <meta charset="UTF-8">
     <title>TjattX!</title>
     <link href="bootstrap/css/sticky-footer.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tjatt</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
-<body style="overflow-x: hidden;">
-    <div class="h1 text-center">
-        TjattX
-    </div>
-    <div class="row" style="margin-top:50px;">
-	    <div style="margin-left:10px;" class="col-md-3">
-	        {{> localwebcam}}
-	    </div>
-    	<div style="overflow: auto; height: 600px !important; margin-left:-10px;" class="col-md-6" id="chatWindow">
-        	<div>
-	            <table class="table table-bordered table-striped">
-	                <thead style="position:sticky">
-	                    <tr>
-	                        <th>
-	                            <p class="text-center"><i>Say Something!</i></p>
-	                        </th>
-	                    </tr>
-	                </thead>
-	                <tbody id="chatmessages" style="text-align:left;">
-	                    {{> messages}}
-	                </tbody>
-                  <tbody>
-	                <tr>
-	                    <td>{{> input}}</td>
-	                </tr>
-                </tbody>
-	            </table>
-        	</div>
-        </div>
-		<div style="margin-left:-10px;" class="col-md-3">
-			<div class="well" id="Camera2">
-				{{> remotewebcam}}
-			</div>
-		</div>
-    </div>
-    <footer class="footer">
-      <div class="container">
-        <p class="text-center text-muted">Copyright © 2015 TjattX.is. All Rights Reserved.</p>
-      </div>
-    </footer>
+
+<body style="background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/escheresque_ste.png);">
+	<div style="display:none;" id="sida1">
+	    {{> site1}}
+	</div>
+
+	<div id="sida2">
+	 	{{> site2}}
+	</div>
 </body>
+
