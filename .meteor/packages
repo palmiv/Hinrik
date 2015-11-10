@@ -11,7 +11,10 @@ service-configuration
 
 twbs:bootstrap
 jquery
+<<<<<<< HEAD
 accounts-password
+=======
+>>>>>>> 36b7c4688dcd30715cdaa32e37eec84a952892a8
 standard-minifiers
 meteor-base
 mobile-experience
